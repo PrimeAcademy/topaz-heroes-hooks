@@ -14,23 +14,6 @@ function App() {
     }
   ])
 
-
-  // just like $(document).ready()
-  useEffect(() => {
-    console.log('App is loaded!');
-    fetchData();
-  });
-
-  const fetchData = () => {
-    // make GET request here
-
-    // axios.get().then(response => {
-    // setHeroList(response.data);
-    //})
-
-
-  }
-
   // called from Item
   const avengersAssemble = (hero) => {
     console.log('Avengers Assemble!', hero);
