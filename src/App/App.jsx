@@ -3,6 +3,8 @@ import Header from '../Header/Header';
 import HeroList from '../HeroList/HeroList';
 import './App.css';
 
+import { HeroForm } from '../HeroForm/HeroForm.jsx';
+
 function App() {
   const heroList = useSelector(store => store.heroList);
 
@@ -20,6 +22,9 @@ function App() {
       {/* list of super heroes */}
       {/* lefthand side of props becomes props.the_name */}
       <main>
+        <div>
+          <HeroForm />
+        </div>
         <HeroList
           heroList={heroList}
           avengersAssemble={avengersAssemble} />
