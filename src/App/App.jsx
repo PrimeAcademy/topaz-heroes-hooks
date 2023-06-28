@@ -1,18 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import Header from '../Header/Header';
 import HeroList from '../HeroList/HeroList';
 import './App.css';
 
 function App() {
-
-  const [heroList, setHeroList] = useState([
-    {
-      superheroName: 'Prof X',
-      onDuty: true,
-      alias: 'Xavier',
-      power: 'does stuff'
-    }
-  ])
+  const heroList = useSelector(store => store.heroList);
 
   // called from Item
   const avengersAssemble = (hero) => {
