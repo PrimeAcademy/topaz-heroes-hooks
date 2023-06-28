@@ -27,7 +27,6 @@ export function HeroForm() {
       type: 'CREATE_SUPERHERO',
       payload: {
         superheroName: name,
-        onDuty: true,
         alias,
         power
       }
